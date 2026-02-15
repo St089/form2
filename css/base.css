@@ -1,0 +1,27 @@
+/* base.css – premenné, typografia, layout základ */
+:root{
+  --c-navy:#243447;
+  --c-sand:#F4EFE8;
+  --c-line:#D8D2C8;
+  --c-terra:#C46A3B;
+
+  --radius:16px;
+  --shadow:0 10px 30px rgba(0,0,0,.08);
+
+  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--font);
+  color:var(--c-navy);
+  background:var(--c-sand);
+  line-height:1.45;
+}
+img{max-width:100%; display:block}
+
+a{color:inherit}
+button,input,select,textarea{font:inherit}
+:focus{outline:2px solid rgba(36,52,71,.35); outline-offset:2px}

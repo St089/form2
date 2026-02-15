@@ -1,0 +1,84 @@
+/* layout.css – wizard, progress, rozloženie kariet */
+.l-shell{
+  max-width:880px;
+  margin:0 auto;
+  padding:16px;
+}
+
+.l-header__inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin:12px 0 18px 0;
+}
+.l-brand__logo{height:22px; color:var(--c-navy)}
+.l-token{font-size:.95rem; color:rgba(36,52,71,.8)}
+.l-token__label{margin-right:.4rem}
+
+.l-wizard{display:block}
+
+.l-card{
+  background:rgba(255,255,255,.65);
+  border:1px solid var(--c-line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:18px;
+  display:none;
+}
+.l-card.is-active{display:block}
+
+.l-card__head{margin-bottom:12px}
+.l-meta{display:flex; justify-content:space-between; color:rgba(36,52,71,.75); font-size:.95rem; margin-bottom:8px}
+.l-title{margin:.2rem 0 .6rem 0; font-size:1.6rem}
+.l-question{margin:.2rem 0 0 0; font-size:1.25rem}
+.l-lead{margin:.5rem 0 0 0}
+
+.l-card__foot{margin-top:14px}
+.l-actions{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+}
+.l-actions--right{justify-content:flex-end}
+
+
+/* Progress */
+.l-progress{
+  margin:0 0 14px 0;
+}
+.l-progress__meta{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:rgba(36,52,71,.75);
+  font-size:.95rem;
+  margin:0 0 8px 0;
+}
+.l-progress__bar{
+  width:100%;
+  height:10px;
+  border:1px solid var(--c-line);
+  border-radius:999px;
+  background:rgba(255,255,255,.55);
+  overflow:hidden;
+}
+.l-progress__fill{
+  height:100%;
+  width:0%;
+  background:var(--c-navy);
+}
+
+
+.l-brand__text{
+  font-weight:700;
+  letter-spacing:.04em;
+}
+.l-token__value{
+  display:inline-block;
+  max-width:180px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
